@@ -1,5 +1,9 @@
+/*-----------------------------------------------------------------------------
+A simple "Hello World" bot for the Microsoft Bot Framework.
+-----------------------------------------------------------------------------*/
+
 var restify = require('restify');
-var builder = require('botbuilder');
+var builder = require('../../core/');
 
 //=========================================================
 // Bot Setup
@@ -7,7 +11,7 @@ var builder = require('botbuilder');
 
 // Setup Restify Server
 var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 1337, function () {
+server.listen(process.env.port || process.env.PORT || 3978, function () {
    console.log('%s listening to %s', server.name, server.url);
 });
 
